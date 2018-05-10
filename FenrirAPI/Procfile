@@ -1,0 +1,1 @@
+web: java -cp target/classes:target/dependency/* mx.itam.adsi.fenrir.fenrirapi.heroku.Main

@@ -1,0 +1,1 @@
+En la segunda reunion acordamos utilizar python para la parte del front y java para la parte del back, haremos tests unitarios para el java. Tambien acordamos las cosas basicas que queremos que inclya la parte basica.

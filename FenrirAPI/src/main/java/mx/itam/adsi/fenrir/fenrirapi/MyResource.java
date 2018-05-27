@@ -1,5 +1,6 @@
 package mx.itam.adsi.fenrir.fenrirapi;
 
+import java.util.List;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -18,8 +19,11 @@ public class MyResource {
      * @return String that will be returned as a text/plain response.
      */
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getIt() {
-        return "Hello, Heroku!";
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<BinanceCoinInfo> getIt() {
+        BinanceAPIHelper helper = new BinanceAPIHelper();
+        List<BinanceCoinInfo> response = helper.getCoinData();
+        System.out.println("List acquired");
+        return response;
     }
 }

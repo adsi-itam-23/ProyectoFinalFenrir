@@ -1,0 +1,1 @@
+-Pagina html del proyecto. para que se considere completa es necesario que reciba datos de forma correcta y que muestre al menos 5 monedas distintas en distintas tabs.

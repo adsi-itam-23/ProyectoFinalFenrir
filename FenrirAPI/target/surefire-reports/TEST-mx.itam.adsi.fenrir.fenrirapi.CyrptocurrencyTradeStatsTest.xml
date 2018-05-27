@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="mx.itam.adsi.fenrir.fenrirapi.MyResourceTest" time="2.606" errors="1" skipped="0">
+<testsuite tests="3" failures="0" name="mx.itam.adsi.fenrir.fenrirapi.CyrptocurrencyTradeStatsTest" time="0.09" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\bin"/>
@@ -17,7 +17,6 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\Pablo\Documents\ITAM\ADSI\ProyectoFinalFenrir\FenrirAPI"/>
     <property name="java.runtime.version" value="1.8.0_172-b11"/>
-    <property name="netbeans.deploy" value="true"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
@@ -45,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_172\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dnetbeans.deploy=true -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,59 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="mx.itam.adsi.fenrir.fenrirapi.MyResourceTest" name="testGetIt" time="2.364">
-    <error message="HTTP 500 Request failed." type="javax.ws.rs.InternalServerErrorException">javax.ws.rs.InternalServerErrorException: HTTP 500 Request failed.
-	at org.glassfish.jersey.client.JerseyInvocation.convertToException(JerseyInvocation.java:1098)
-	at org.glassfish.jersey.client.JerseyInvocation.translate(JerseyInvocation.java:883)
-	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:767)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:229)
-	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:414)
-	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:765)
-	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:428)
-	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:324)
-	at mx.itam.adsi.fenrir.fenrirapi.MyResourceTest.testGetIt(MyResourceTest.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-</error>
-    <system-err>may 26, 2018 8:11:14 PM org.glassfish.jersey.test.grizzly.GrizzlyTestContainerFactory$GrizzlyTestContainer &lt;init&gt;
-INFORMACIÓN: Creating GrizzlyTestContainer configured at the base URI http://localhost:9998/
-may 26, 2018 8:11:16 PM org.glassfish.grizzly.http.server.NetworkListener start
-INFORMACIÓN: Started listener bound to [localhost:9998]
-may 26, 2018 8:11:16 PM org.glassfish.grizzly.http.server.HttpServer start
-INFORMACIÓN: [HttpServer] Started.
-may 26, 2018 8:11:16 PM org.glassfish.grizzly.http.server.NetworkListener shutdownNow
-INFORMACIÓN: Stopped listener bound to [localhost:9998]
-</system-err>
-  </testcase>
+  <testcase classname="mx.itam.adsi.fenrir.fenrirapi.CyrptocurrencyTradeStatsTest" name="testVolumen" time="0.022"/>
+  <testcase classname="mx.itam.adsi.fenrir.fenrirapi.CyrptocurrencyTradeStatsTest" name="testMakers" time="0"/>
+  <testcase classname="mx.itam.adsi.fenrir.fenrirapi.CyrptocurrencyTradeStatsTest" name="testPrecio" time="0"/>
 </testsuite>

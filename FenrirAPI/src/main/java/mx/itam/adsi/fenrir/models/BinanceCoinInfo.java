@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package mx.itam.adsi.fenrir.fenrirapi;
+package mx.itam.adsi.fenrir.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

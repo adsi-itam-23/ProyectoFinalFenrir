@@ -1,0 +1,2 @@
+En la primera reunion acordamos que dividiriamos el proyecto en tres sprints super cortos, tendriamos un html sencillo que muestre algunas graficas y procesaremos los datos disponibles para recomendarle al usuario comprar o vender la criptomoneda.
+En la primera semana haremos el front del proyecto principalmente.
